@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Zhi+Mang+Xing&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+    
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    background: rgb(255, 253, 208);
+}
+header{
+ width: 100%;
+ height: 80px;
+ z-index: 1;
+}
+.nav-container{
+    width: 100%;
+    position: fixed;
+    background-color: saddlebrown;
+
+}
+ nav{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;  
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+.text-logo{
+    color: tomato;
+    font-size: .7rem;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+.list-menu ul{
+    color: rgb(13, 175, 40);
+    margin: 0px 2rem 0px 2px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.list-menu ul li a{
+     text-decoration: none;
+     color: silver;
+     text-transform: uppercase;
+     transition: 1s ease;
+     cursor: pointer;
+} 
+   .list-menu ul li a:hover{
+       color: coral;
+       font-size: .6rem;
+       
+   }
+
+.list-menu ul li{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+/* .................. end of a  header coffee banner........ */
+
+.bg{
+    width: 100%;
+    margin-left: 2.5rem;
+}
+.bg video{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ..........section goes here ................... */
+section{
+    width: 100%;
+    height: 100vh;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.coffee-palace{
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: grey;
+    transition: 1s ease;
+    cursor: pointer;
+}
+.coffee-palace:hover{
+    background: rgb(255, 253, 208);
+    font-size: 1.2rem;
+    border-radius: 6px;
+    -webkit-box-shadow: -2px -1px 14px 0px rgba(179, 32, 16, 0.66);
+    -moz-box-shadow:    -2px -1px 14px 0px rgba(100, 15, 6, 0.66);
+     box-shadow:         -2px -1px 14px 0px rgba(133, 20, 7, 0.66);
+}
+
+.coffee-palace p{
+    font-size: .7rem;
+    text-align: center;
+}
+.coffee-palace h2{
+    color: rgb(71, 32, 5);
+}
+
+/* .......................product section................. */
+ #product{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    background: rgb(255, 253, 208);
+}
+#product img{
+    width: 90px;
+    height: 90px;
+}
+.product-items{
+    width: 150px;
+    height: 200px;
+    margin: 1rem 2rem 1.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1s ease-in-out;
+
+}
+.product-items:hover{
+    border: 3px solid #6f4e37;
+    color: rgb(15, 6, 1);
+    border-radius: 5px;
+     width: 180px;
+     height: 180px;
+     font-size: .5rem;
+    -webkit-box-shadow: -2px -1px 14px 0px rgba(179, 32, 16, 0.66);
+    -moz-box-shadow:    -2px -1px 14px 0px rgba(100, 15, 6, 0.66);
+     box-shadow:         -2px -1px 14px 0px rgba(133, 20, 7, 0.66);
+}
+.product-items p{
+    font-size: .7rem;
+}
+.product-items h2{
+    color: rgb(71, 32, 5);
+
+
+}
+
+/* .............contact area .............. */
+.contact{
+    background: url(contact.jpg) no-repeat center center/cover;
+}
+
+.contact .comment{
+    color: lime;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin: 2rem;
+    background: transparent;
+
+}
+.contact .comment input  {
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    width: 250px;
+
+}
+#comment{
+    background: transparent;
+    margin: 1rem;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-info ul{
+    list-style: none;
+    font-size: 1.3rem;
+    color: tomato;
+
+}
+.contact-info ul li a{
+    text-decoration: none;
+    margin: 1rem;
+    color: silver;
+    margin: 1.3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+}
+.contact-info ul li a i:hover{
+    margin-left: 2rem;
+    color: #DAA520;
+}
+
+input[type="submit"]{
+    color: silver;
+    width: 30px;
+    border-color: wheat;
+    letter-spacing: 3px;
+    font-size: .7rem;
+}
+label{
+    text-align: center;
+    color: silver;
+    display: flex;
+    justify-content: center;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+.comment .btn{
+    color: limegreen;
+    text-transform: uppercase;
+    
+}
+
+/* /* ..................fotter.....; */
+ .footer-info{
+     width: 100%;
+     height: 200px;
+     padding-left: 2rem;
+     margin-left: 2.5rem;
+     display: flex;
+     justify-content: space-evenly;
+ }
+ .footer-info ul{
+     list-style: none;
+ }
+ .footer-icons{
+     width: 100px;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+ }
+ .footer-icons img{
+     widows: 100px;
+     height: 100px;
+     border-radius: 50%;
+ }
+ .footer-icons ul{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     margin-top: 2rem;
+
+
+ }
+ .footer-icons ul li a{
+    color: saddlebrown;
+     margin: 1rem;
+     font-size: 1rem;
+     margin-top: 2rem;
+     
+ }
+ .footer-icons ul li a i:hover{
+    color: rgb(19,13,10);
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+ .location{
+     width: 200px;
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     text-transform: capitalize;
+ }
+ .newsletter{
+     color: lime;
+     width: 200px;
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+ }
+ .newsletter h2{
+     font-size: .8rem;
+     text-transform: uppercase;
+     color:  #6f4e37;
+ }
+ .newsletter label{
+     margin-top: 2rem;
+     color: lime;
+     font-size: .7rem;
+     margin-top: 1.4rem;
+ }
+ .newsletter input[type="email"]{
+     width: 13rem;
+     height: 24px;
+     margin-top: .5rem;
+     font-size: .6rem;
+ }
+ .newsletter input[type="submit"]{
+      width: 13rem;
+      margin-top: 1.2rem;
+      border: none;
+      border-radius: 3px;
+ }
+ /* .............hover effects on icons ............ */
+i{
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: 2s ease;
+}
+i:hover{
+    color: #f5efeb;
+    font-size: 1.4rem;
+}
+.btn{
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.btn:hover{
+    border: 1px solid #DAA520;
+    background: brown;
+    color: silver;
+}
